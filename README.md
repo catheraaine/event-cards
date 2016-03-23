@@ -8,8 +8,10 @@ To reenforce the semantic aspect, I will break down [single-card.html](https://g
   <div class="vcard">
     <h2 class="url fn"><a href="http://www.lindseystirling.com/">Lindsey Stirling</a></h2>
     <ul>
-      <li datetime="2016-07-22">
+      <li>
+        <time datetime="2016-07-22">
         July 22-24, 2016
+        </time>
       </li>
       <li>
         <span class="url org"><a href="http://wayhome.com/" title="WayHome Website">WayHome Music & Arts</a></span>
@@ -49,7 +51,7 @@ Each event card needs two pieces of information: a date and a location.
 
 I have chosen to organize these items in an unordered list. A *list*, because the two items are more related than separate headings or paragraphs, but not so related to be in the same heading or paragraph. An *unordered* list, because the items make sense no mater how they are displayed on the page.
 
-### `<li datetime="2016-07-22">`
+### `<li> <time datetime="2016-07-22">`
 The first `<li>` on my event card is the date of the event. As I said above, technically this could be before or after the venue. I chose above only because it looks nicer.
 
 I have included the `datetime` attribute, because the content of this `<li>` is just a date. Thanks [Nate](https://twitter.com/nathanAlan) for showing me this attribute!
