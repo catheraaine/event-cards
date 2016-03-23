@@ -54,7 +54,7 @@ I have chosen to organize these items in an unordered list. A *list*, because th
 ### `<li> <time datetime="2016-07-22">`
 The first `<li>` on my event card is the date of the event. As I said above, technically this could be before or after the venue. I chose above only because it looks nicer.
 
-I have included the `datetime` attribute, because the content of this `<li>` is just a date. Thanks [Nate](https://twitter.com/nathanAlan) for showing me this attribute!
+I have included a `<time>` element with the `datetime` attribute, because the content of this `<li>` is just a date. Thanks [Nate](https://twitter.com/nathanAlan) for showing me this attribute!
 
 ### `<li> <span class="url org">`
 I have decided to make the second `<li>` include both the venue name and venue location. It may make sense to split these into two separate `<li>`s. I am not sure there is a wrong answer in this place. I made the choice to keep them together as, to me, the name of the venue is just a piece of the event location.
