@@ -65,7 +65,7 @@ Another vCard convention is to wrap addresses in an `adr` container class. Insid
 
 I could improve the usability of this section of my event card by adding in the full address of the venue and/or map data.
 
-### <img>
+### `<img>`
 This image is another feature Ben helped me to improve. Originally, I had the `<img>` located at the top of the card. However, the image itself is not that important to the content of the page. It is mostly a style image, though it would help a visual person quickly find the event on the page, if he or she recognized the artist. So the image is still content.
 
 For that reason, I chose to keep this image in the markup, but move it to the very end of the card.
