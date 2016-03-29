@@ -2,6 +2,7 @@ body {
   font-size: 100%;
   font-family: 'Muli', Helvetica, Arial, sans-serif;
   background-color: #F5F5F5;
+  overflow-x: hidden;
 }
 
 .container {
@@ -16,14 +17,13 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 2.5rem;
-  padding: 0 .2em;
+  font-size: 1.5em;
+  padding: .4em;
 }
 
 header {
   background-color: #2EA0AB;
   position: relative;
-  padding: 0;
   margin: .75em;
 }
 
@@ -42,8 +42,6 @@ header:after {
   left: 100%;
 
 }
-
-
 
 .card {
   max-width: calc(100% - 1.5em);
@@ -114,14 +112,44 @@ header:after {
   color: #2EA0AB;
 }
 
+.clear {
+    clear: both;
+    height: 4em;
+}
+
+footer {
+  display: none;
+
+}
 
 
 /****************************************************************/
+
+@media screen and (min-width: 30em) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
 
 @media screen and (min-width: 50em) {
   .card {
     max-width: calc(50% - 1.5em);
     float: left;
+  }
+
+  footer {
+    display: block;
+    background-color: #666;
+    color: #333;
+    font-size: .8em;
+    height: 3em;
+    width: 100%;
+    padding: .5em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+
   }
 }
 
