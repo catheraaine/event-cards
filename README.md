@@ -23,7 +23,7 @@ To reenforce the semantic aspect, I will break down [single-card.html](https://g
       </li>
     </ul>
 
-    <img src="https://www.dropbox.com/s/g5qwby9vmoeswuk/lindsey.png?raw=1" alt="Lindsey and her violin." class="photo" />
+    <img src="images/lindsey.png" alt="Lindsey and her violin." class="photo" />
 
   </div>
 </article>
@@ -58,6 +58,8 @@ I have included a `<time>` element with the `datetime` attribute, because the co
 
 ### `<li> <span class="url org">`
 I have decided to make the second `<li>` include both the venue name and venue location. It may make sense to split these into two separate `<li>`s. I am not sure there is a wrong answer in this place. I made the choice to keep them together as, to me, the name of the venue is just a piece of the event location.
+
+*Update:* I changed my mind, and decided to move the address to a separate `<li>`. This is because I wanted the two bits of information, visibly, to be on separate lines. This is not a great idea - my styles are dictating my markup. I can live with myself, however, because it is a content choice to keep the venue name and location visibly separate. They also fall under different vCard classes. I am not the master of HTML/CSS, and I can (and will often) be wrong. 
 
 The name of the venue fits nicely within a vCard `org` class, once again with a `url` class to identify that the included link takes you to the venue website.
 
