@@ -12,7 +12,8 @@ body {
   position: relative;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Glegoo', Georgia, serif;
 }
 
@@ -24,10 +25,11 @@ h1 {
 header {
   background-color: #2EA0AB;
   position: relative;
-  margin: .75em;
+  margin: 1.5em;
 }
 
-header:before, header:after {
+header:before,
+header:after {
   content: "";
   position: absolute;
   top: 0;
@@ -40,7 +42,6 @@ header:before, header:after {
 header:after {
   width: 100%;
   left: 100%;
-
 }
 
 .card {
@@ -60,7 +61,7 @@ header:after {
 
 .card li {
   margin: 0;
-
+  margin-left: .5em;
 }
 
 .card img {
@@ -88,13 +89,13 @@ header:after {
   transition: background-color .25s ease;
 }
 
-.info h2 a:link, .info h2 a:visited {
+.info h2 a:link,
+.info h2 a:visited {
   color: #000;
 }
 
 .info h2 a:hover {
   background-color: #2EA0AB;
-
 }
 
 .info ul {
@@ -102,7 +103,8 @@ header:after {
   background-color: rgba(0, 0, 0, 0.85);
 }
 
-.card a:link, .card a:visited {
+.card a:link,
+.card a:visited {
   color: #C2C2C2;
   text-decoration: none;
   display: block;
@@ -113,13 +115,12 @@ header:after {
 }
 
 .clear {
-    clear: both;
-    height: 4em;
+  clear: both;
+  height: 4em;
 }
 
 footer {
   display: none;
-
 }
 
 
@@ -136,11 +137,10 @@ footer {
     max-width: calc(50% - 1.5em);
     float: left;
   }
-
   footer {
     display: block;
     background-color: #666;
-    color: #333;
+    color: #111;
     font-size: .8em;
     height: 3em;
     width: 100%;
@@ -149,7 +149,6 @@ footer {
     bottom: 0;
     left: 0;
     margin: 0;
-
   }
 }
 
@@ -157,8 +156,5 @@ footer {
   .card {
     max-width: calc(33.33333% - 1.5em);
   }
-
-  .info {
-
-  }
+  .info {}
 }
