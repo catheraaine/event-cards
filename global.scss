@@ -1,0 +1,183 @@
+$main-color: #2EA0AB;
+$accent-color: #F27A24;
+$neutral-color: #666;
+$background-color: #F5F5F5;
+$font-light: #C2C2C2;
+$font-dark: #111;
+$info-bg-color: rgba(0, 0, 0, 0.85);
+$info-title-bg-color: rgba(255, 255, 255, .75);
+
+$title-font: 'Glegoo', Georgia, serif;
+$body-font: 'Muli', Helvetica, Arial, sans-serif;
+$gutters: .75em !default;
+$double-gutters: 1.5em !default;
+
+body {
+  font-size: 100%;
+  font-family: $body-font;
+  background-color: $background-color;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: $title-font;
+  font-size: 1.5em;
+  padding: .4em;
+}
+
+h2 {
+  font-family: $title-font;
+}
+
+.container {
+  width: calc(100% -  #{$double-gutters});
+  margin: 0 auto;
+  max-width: 90em;
+  position: relative;
+}
+
+header {
+  background-color: $main-color;
+  position: relative;
+  margin: $gutters;
+
+  &:before, &:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  right: 100%;
+  background-color: $neutral-color;
+  }
+
+  &:after {
+  width: 100%;
+  left: 100%;
+  }
+}
+
+
+.card {
+  max-width: calc(100% - #{$double-gutters});
+  float: none;
+  text-align: center;
+  position: relative;
+  margin: $gutters;
+
+  ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  }
+
+  li {
+  margin: 0;
+  margin-left: .5em;
+  }
+
+  img {
+  display: block;
+  width: 100%;
+  }
+
+  h2 {
+  text-align: left;
+  margin: 0;
+  }
+
+  a:link, a:visited {
+  color: $font-light;
+  text-decoration: none;
+  display: block;
+  }
+
+ a:hover {
+  color: $main-color;
+  }
+
+  &:nth-child(odd) a:hover {
+  color: $accent-color;
+  }
+
+  &:nth-child(odd) .info h2 a:hover {
+  background-color: $accent-color;
+  color: $font-dark;
+}
+
+}
+
+
+.info {
+  position: absolute;
+  color: $font-light;
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 1em;
+
+  ul {
+  padding: $gutters;
+  background-color: $info-bg-color;
+  }
+
+  h2 {
+    a {
+    background-color: $info-title-bg-color;
+    padding-left: $gutters;
+    transition: background-color .55s ease;
+    }
+    a:link, a:visited {
+    color: $font-dark;
+    }
+    a:hover {
+    background-color: $main-color;
+    }
+  }
+}
+
+
+.clear {
+  clear: both;
+  height: 4em;
+}
+
+footer {
+  display: none;
+  background-color: $neutral-color;
+  color: $font-dark;
+  font-size: .8em;
+  height: 3em;
+  width: 100%;
+  padding: .5em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+}
+
+
+/****************************************************************/
+
+@media screen and (min-width: 30em) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .card {
+    max-width: calc(50% - #{$double-gutters});
+    float: left;
+  }
+  footer {
+    display: block;
+
+  }
+}
+
+@media screen and (min-width: 71em) {
+  .card {
+    width: calc(33.33333% - #{$double-gutters});
+  }
+}

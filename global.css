@@ -5,13 +5,6 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  width: calc(100% - 1.5em);
-  margin: 0 auto;
-  max-width: 90em;
-  position: relative;
-}
-
 h1,
 h2 {
   font-family: 'Glegoo', Georgia, serif;
@@ -20,6 +13,13 @@ h2 {
 h1 {
   font-size: 1.5em;
   padding: .4em;
+}
+
+.container {
+  width: calc(100% - 1.5em);
+  margin: 0 auto;
+  max-width: 90em;
+  position: relative;
 }
 
 header {
@@ -83,20 +83,6 @@ header:after {
 
 }
 
-.info h2 a {
-  background-color: rgba(255, 255, 255, .75);
-  padding-left: .75em;
-  transition: background-color .25s ease;
-}
-
-.info h2 a:link,
-.info h2 a:visited {
-  color: #000;
-}
-
-.info h2 a:hover {
-  background-color: #2EA0AB;
-}
 
 .info ul {
   padding: .75em;
@@ -113,6 +99,31 @@ header:after {
 .card a:hover {
   color: #2EA0AB;
 }
+
+.card:nth-child(odd) a:hover {
+  color: #F27A24;
+}
+
+.info h2 a {
+  background-color: rgba(255, 255, 255, .75);
+  padding-left: .75em;
+  transition: background-color .55s ease;
+}
+
+.info h2 a:link,
+.info h2 a:visited {
+  color: #000;
+}
+
+.info h2 a:hover {
+  background-color: #2EA0AB;
+}
+
+.card:nth-child(odd) .info h2 a:hover {
+  background-color: #F27A24;
+  color: #000;
+}
+
 
 .clear {
   clear: both;
