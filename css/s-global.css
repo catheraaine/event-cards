@@ -1,0 +1,119 @@
+body {
+  font-size: 100%;
+  font-family: "Muli", Helvetica, Arial, sans-serif;
+  background-color: #F5F5F5;
+  overflow-x: hidden; }
+
+h1 {
+  font-family: "Glegoo", Georgia, serif;
+  font-size: 1.5em;
+  padding: .4em; }
+
+h2 {
+  font-family: "Glegoo", Georgia, serif; }
+
+.container {
+  width: calc(100% -  1.5em);
+  margin: 0 auto;
+  max-width: 90em;
+  position: relative; }
+
+header {
+  background-color: #2EA0AB;
+  position: relative;
+  margin: 0.75em; }
+  header:before, header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    right: 100%;
+    background-color: #666; }
+  header:after {
+    width: 100%;
+    left: 100%; }
+
+.card {
+  max-width: calc(100% - 1.5em);
+  float: none;
+  text-align: center;
+  position: relative;
+  margin: 0.75em; }
+  .card ul {
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0; }
+  .card li {
+    margin: 0;
+    margin-left: .5em; }
+  .card img {
+    display: block;
+    width: 100%; }
+  .card h2 {
+    text-align: left;
+    margin: 0; }
+  .card a:link, .card a:visited {
+    color: #C2C2C2;
+    text-decoration: none;
+    display: block; }
+  .card a:hover {
+    color: #2EA0AB; }
+  .card:nth-child(odd) a:hover {
+    color: #F27A24; }
+  .card:nth-child(odd) .info h2 a:hover {
+    background-color: #F27A24;
+    color: #111; }
+
+.info {
+  position: absolute;
+  color: #C2C2C2;
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 1em; }
+  .info ul {
+    padding: 0.75em;
+    background-color: rgba(0, 0, 0, 0.85); }
+  .info h2 a {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding-left: 0.75em;
+    transition: background-color .55s ease; }
+  .info h2 a:link, .info h2 a:visited {
+    color: #111; }
+  .info h2 a:hover {
+    background-color: #2EA0AB; }
+
+.clear {
+  clear: both;
+  height: 4em; }
+
+footer {
+  display: none;
+  background-color: #666;
+  color: #111;
+  font-size: .8em;
+  height: 3em;
+  width: 100%;
+  padding: .5em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0; }
+
+/****************************************************************/
+@media screen and (min-width: 30em) {
+  h1 {
+    font-size: 2.5em; } }
+@media screen and (min-width: 50em) {
+  .card {
+    max-width: calc(50% - 1.5em);
+    float: left; }
+
+  footer {
+    display: block; } }
+@media screen and (min-width: 71em) {
+  .card {
+    width: calc(33.33333% - 1.5em); } }
+
+/*# sourceMappingURL=s-global.css.map */
